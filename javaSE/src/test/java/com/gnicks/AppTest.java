@@ -1,5 +1,6 @@
 package com.gnicks;
 
+import com.gnicks.designs.Singleton;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -7,7 +8,7 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+public class AppTest
     extends TestCase
 {
     /**
@@ -33,8 +34,9 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( true );
+        for (int i = 0; i < 100; i++) {
+            new Thread(()->{System.out.println(Singleton.getInstance().hashCode());}).start();
+        }
     }
-
 
 }
