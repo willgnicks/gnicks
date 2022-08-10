@@ -56,10 +56,10 @@
         </dependency>
 
         <!--对常用测试依赖的支持，包括JUnit，Hamcrest和Mockito还有Spring-test模块-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-test</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

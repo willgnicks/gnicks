@@ -20,7 +20,7 @@ public class Stream {
 
         Arrays.stream(numbers).sorted().filter((number) -> number > 1 );
 
-
+        Runnable aNew = Stream::new;
     }
 
 }
